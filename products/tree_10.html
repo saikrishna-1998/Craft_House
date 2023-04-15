@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-  /* Make the image fully responsive */
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
-  }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="card">
+        <div class="img">
+            <img src="../images/product_images/tree_1/img1.jpg"  alt="" onclick="clk(this)"> <br>
+            <img src="../images/product_images/tree_1/img2.jpg" alt="" onclick="clk(this)"> <br>
+            <img src="../images/product_images/tree_1/img3.jpg"  alt="" onclick="clk(this)"> <br>
+            <img src="../images/product_images/tree_1/img4.jpg"  alt="" onclick="clk(this)"> <br>
+            <img src="../images/product_images/tree_1/img5.jpg"  alt="" onclick="clk(this)"> <br>
 
-<div id="demo" class="carousel slide" data-ride="carousel">
+        </div>
+        <div class="left">
+            <img src="../images/product_images/tree_1/img1.jpg" id="imgs" alt="">
+        </div>
 
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="la.jpg" alt="Los Angeles" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
-    </div>
-    <div class="carousel-item">
-      <img src="ny.jpg" alt="New York" width="1100" height="500">
-    </div>
-  </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
+        <div class="right">
+            <h3>Craft House</h3>
+            <h1>Art Wire Bonsai Tree Sculpture With Green Leaves Up To 12 Inches Tall.</h1>
+            <p class = "text-capitalize my-1">Art Wire Bonsai Tree Sculpture With Green Leaves Up To 12 Inches Tall. </p>
+                            <span class = "fw-bold text-danger">₹ <s>4,999</s> (35% off)</span><br>
+                            <span class = "fw-bold">₹ 3,249</span>
+                            <p class="text-danger">Only 1 unit is available</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <h3></h3>
+            <h4>Available Offer's</h4>
+            <p>: Special Price on First Sale </p>
+            <!-- <p>: Partner OfferPurchase now & get a surprise cashback coupon for January / February 2023</p>
+            <p>: Partner OfferSign up for Flipkart Pay Later and get Flipkart Gift Card worth up to ₹1000*</p>
+            <p>: Bank Offer5% Cashback on Flipkart Axis Bank</p> -->
+             <!-- <button>Back</button>
+             <button>Home</button> -->
+             <li class = "nav-item px-2 py-2">
+              <a class = "nav-link text-uppercase text-dark" href = "../index.html">home</a>
+          </li>
 
+        </div>
+    </div>
+
+    <script>
+        function clk(newImg){
+            let getImg=document.getElementById("imgs");
+            getImg.src=newImg.src;
+        }
+    </script>
 </body>
 </html>
