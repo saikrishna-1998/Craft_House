@@ -52,10 +52,45 @@ body{
 }
 
 /* header */
-#header{
+/* #header{
     background: url(../images/main_page_images/main1.jpg) top/cover no-repeat;
-}
-.carousel-inner h1{
+} */
+
+
+
+#header {
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-image: url(../images/main_page_images/main1.jpg);
+  }
+  
+  /*--For mobile devices--*/
+  @media (max-width: 480px) {
+    #header {
+          background-image: url(../images/corosal_pics/c1-1.jpg);
+      }
+  }
+  
+  /*-----For tablets: ---------------*/
+  @media (min-width: 481px) and (max-width: 1024px) {
+    #header {
+          background-image: url(../images/main_page_images/main2.jpg);
+      }
+  }
+  
+  /*-----For desktop devices ------*/
+  @media (min-width: 1025px) {
+    #header {
+          background-image: url(../images/main_page_images/main1.jpg);
+     }
+  }
+
+
+
+
+  .carousel-inner h1{
     font-size: 60px;
     font-family: var(--lg-font);
 }
