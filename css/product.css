@@ -1,58 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+img{
+    width: 100%;
+    display: block;
+}
+.main-wrapper{
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+    
+}
+.product-div{
+    margin: 1rem 0;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    border-radius: 3px;
+    column-gap: 10px;
+}
+.product-div-left{
+    padding: 20px;
+}
+.product-div-right{
+    padding: 20px;
+}
+.img-container img{
+    width: 400px;
+    margin: 0 auto;
+}
+.hover-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+.hover-container div{
+    border: 2px solid rgba(252, 160, 175, 0.7);
+    padding: 3px;
+    border-radius: 3px;
+    margin: 0 4px 8px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active{
+    border-color: rgb(0, 255, 68)!important;
+}
+.hover-container div:hover{
+    border-color: rgb(2, 255, 2);
+}
+.hover-container div img{
+    width: 80px;
+    cursor: pointer;
+}
+.product-div-right span{
+    display: block;
+}
+
+@media screen and (max-width: 992px){
+    .product-div{
+        grid-template-columns: 100%;
+    }
+    .product-div-right{
+        text-align: center;
+    }
+    .product-rating{
+        justify-content: center;
+    }
+    .product-description{
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .btn-groups button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
 *{
     margin: 1%;
     padding: 0%;
     font-family: 'Poppins', sans-serif;
 }
-
-.auto-grid {
-    display: grid;
-    --auto-grid-min-size: 16rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-    grid-gap: 1rem;
-}
-.card{
-    display: flex;
-    margin-top: 102px;
-    margin-left: 100px;
-}
-
-.left img{
-    width: 566px;
-    margin-inline:32px ;
-}
-.card .img img{
-    width: 110px;
-    margin-left: 22px;
-    cursor: pointer;
-}
  
 .card .right {
     margin-top: 11px;
 }
-.right h3{
-    margin-top: 11px;
-    color: gray;
-}
-.right h1{
+
+.right h2{
     margin-top: 11px;
 }
 .right i{
-    margin-top: 11px;
+    margin-top: 1px;
     color: green;
 }
 .right h4{
-    margin-top: 11px;
+    margin-top: 1px;
 }
 .right p{
-    margin-top: 11px;
+    margin-top: 1px;
+}
+.right h5{
+    color: red;
 }
 .button{
-    width: 200px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     background-color: rgb(1, 1, 1);
     color: rgb(31, 244, 42);
-    font-size: 25px;
+    font-size: 18px;
     border: 2px;
     border-color: rgb(9, 240, 28);
     margin-top: 22px;
