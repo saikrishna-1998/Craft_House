@@ -4,52 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Craft House</title>
     <link rel="stylesheet" href="../css/product.css">
+
     <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="card">
-        <div class="img">
-            <img src="../images/product_images/tree_6/img1.jpg"  alt="" onclick="clk(this)"> <br>
-            <img src="../images/product_images/tree_6/img2.jpg" alt="" onclick="clk(this)"> <br>
-            <img src="../images/product_images/tree_6/img3.jpg"  alt="" onclick="clk(this)"> <br>
-            <img src="../images/product_images/tree_6/img4.jpg"  alt="" onclick="clk(this)"> <br>
-            <img src="../images/product_images/tree_6/img5.jpg"  alt="" onclick="clk(this)"> <br>
-
+<div class = "main-wrapper">
+    <div class = "container">
+        <div class = "product-div">
+            <div class = "product-div-left">
+                <div class = "img-container">
+                    <img src = "../images/product_images/tree_6/img1.jpg" alt = "watch">
+                </div>
+                <div class = "hover-container">
+                    <div><img src = "../images/product_images/tree_6/img1.jpg"></div>
+                    <div><img src = "../images/product_images/tree_6/img2.jpg"></div>
+                    <div><img src = "../images/product_images/tree_6/img3.jpg" ></div>
+                    <div><img src = "../images/product_images/tree_6/img4.jpg"></div>
+                    <div><img src = "../images/product_images/tree_6/img5.jpg"></div>
+                </div>
+            </div>
+            <div class = "product-div-right">
+                <div class="right">
+                    <h3>Craft House</h3>
+                    <h2 class = "text-capitalize my-1">Art Wire white Bonsai Tree Sculpture With Copper Leaves .</h1>
+                    <p class = "text-capitalize my-1">Tree Up To 26 CM Tall. </p>
+                    <span class = "fw-bold text-danger">₹ <s>3,499</s> (57% off)</span>
+                    <span class = "fw-bold product-price">₹ 1,499 </span>
+                    <h5 class="quantity">* Only 1 unit is available</h5>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <h4>Available Offer's</h4>
+                    <p>: Special Price on First Sale </p>
+                    <p>: For Order Contact Us Via Whatsapp </p>
+                        <button class="button"  onclick="window.location.href= '../index.html';">Home</button>
+                        <button class="button"  onclick="window.location.href= '../#contact';">Contact Us</button>
+                </div>
+            </div>
         </div>
-        <div class="left">
-            <img src="../images/product_images/tree_6/img1.jpg" id="imgs" alt="">
-        </div>
-
-        <div class="right">
-            <h3>Craft House</h3>
-            <h1>Art Wire White Bonsai Tree Sculpture With Copper Leaves.</h1>
-            <p class = "text-capitalize my-1">Art Up To 26 CM Tall. </p>
-                            <span class = "fw-bold text-danger">₹ <s>2,999</s> (50% off)</span><br>
-                            <span class = "fw-bold">₹ 1,499</span>
-                            <p class="text-danger">Only 1 unit is available</p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <h3></h3>
-            <h4>Available Offer's</h4>
-            <p>: Special Price on First Sale </p>
-            <p>: Contact Us Via Whatsapp </p>
-            <button class="button"  onclick="window.location.href= '../index.html';">Home</button>
-            <button class="button"  onclick="window.location.href= '../#contact';">Contact Us</button>
-        </div>
-
     </div>
+</div>
 
-    <script>
-        function clk(newImg){
-            let getImg=document.getElementById("imgs");
-            getImg.src=newImg.src;
-        }
-    </script>
+<script src = "../js/scriptextra.js"></script>
 </body>
 </html>
